@@ -1,0 +1,121 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 1h)
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 13080.930 us/op
+Iteration   1: 11102.907 us/op
+Iteration   2: 11258.162 us/op
+Iteration   3: 10345.220 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery":
+  10902.097 ±(99.9%) 8911.630 us/op [Average]
+  (min, avg, max) = (10345.220, 10902.097, 11258.162), stdev = 488.477
+  CI (99.9%): [1990.466, 19813.727] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 6h)
+
+# Run progress: 25.00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 18627.480 us/op
+Iteration   1: 17178.407 us/op
+Iteration   2: 16815.166 us/op
+Iteration   3: 13722.829 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery":
+  15905.467 ±(99.9%) 34643.471 us/op [Average]
+  (min, avg, max) = (13722.829, 15905.467, 17178.407), stdev = 1898.926
+  CI (99.9%): [≈ 0, 50548.938] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 24h)
+
+# Run progress: 50.00% complete, ETA 00:00:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 24961.376 us/op
+Iteration   1: 20601.881 us/op
+Iteration   2: 20556.330 us/op
+Iteration   3: 20738.625 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery":
+  20632.279 ±(99.9%) 1730.835 us/op [Average]
+  (min, avg, max) = (20556.330, 20632.279, 20738.625), stdev = 94.873
+  CI (99.9%): [18901.444, 22363.114] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 7d)
+
+# Run progress: 75.00% complete, ETA 00:00:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 86198.390 us/op
+Iteration   1: 81724.834 us/op
+Iteration   2: 81679.130 us/op
+Iteration   3: 81223.676 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbIdTemporalQueryBenchmark.idTemporalQuery":
+  81542.546 ±(99.9%) 5055.225 us/op [Average]
+  (min, avg, max) = (81223.676, 81542.546, 81724.834), stdev = 277.094
+  CI (99.9%): [76487.322, 86597.771] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:26
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                         (timeLength)  Mode  Cnt      Score       Error  Units
+InfluxdbIdTemporalQueryBenchmark.idTemporalQuery            1h  avgt    3  10902.097 ±  8911.630  us/op
+InfluxdbIdTemporalQueryBenchmark.idTemporalQuery            6h  avgt    3  15905.467 ± 34643.471  us/op
+InfluxdbIdTemporalQueryBenchmark.idTemporalQuery           24h  avgt    3  20632.279 ±  1730.835  us/op
+InfluxdbIdTemporalQueryBenchmark.idTemporalQuery            7d  avgt    3  81542.546 ±  5055.225  us/op

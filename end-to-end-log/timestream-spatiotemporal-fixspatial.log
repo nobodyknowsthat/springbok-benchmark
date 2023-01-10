@@ -1,0 +1,121 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery
+# Parameters: (spatialWidth = 01, timeLength = 1h)
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 166985.505 us/op
+Iteration   1: 148636.828 us/op
+Iteration   2: 148226.641 us/op
+Iteration   3: 155016.998 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery":
+  150626.822 ±(99.9%) 69463.544 us/op [Average]
+  (min, avg, max) = (148226.641, 150626.822, 155016.998), stdev = 3807.531
+  CI (99.9%): [81163.278, 220090.366] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery
+# Parameters: (spatialWidth = 01, timeLength = 6h)
+
+# Run progress: 25.00% complete, ETA 00:15:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 264188.683 us/op
+Iteration   1: 257379.375 us/op
+Iteration   2: 258217.988 us/op
+Iteration   3: 253516.790 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery":
+  256371.384 ±(99.9%) 45745.381 us/op [Average]
+  (min, avg, max) = (253516.790, 256371.384, 258217.988), stdev = 2507.459
+  CI (99.9%): [210626.003, 302116.765] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery
+# Parameters: (spatialWidth = 01, timeLength = 24h)
+
+# Run progress: 50.00% complete, ETA 00:13:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 682081.116 us/op
+Iteration   1: 678627.960 us/op
+Iteration   2: 673291.590 us/op
+Iteration   3: 664638.108 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery":
+  672185.886 ±(99.9%) 128803.689 us/op [Average]
+  (min, avg, max) = (664638.108, 672185.886, 678627.960), stdev = 7060.165
+  CI (99.9%): [543382.198, 800989.575] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery
+# Parameters: (spatialWidth = 01, timeLength = 7d)
+
+# Run progress: 75.00% complete, ETA 00:12:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 3681931.193 us/op
+Iteration   1: 3684309.226 us/op
+Iteration   2: 3767410.359 us/op
+Iteration   3: 3676869.310 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.TimestreamSpatialTemporalBenchmark.spatialTemporalQuery":
+  3709529.632 ±(99.9%) 917002.903 us/op [Average]
+  (min, avg, max) = (3676869.310, 3709529.632, 3767410.359), stdev = 50264.023
+  CI (99.9%): [2792526.729, 4626532.535] (assumes normal distribution)
+
+
+# Run complete. Total time: 02:39:43
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                (spatialWidth)  (timeLength)  Mode  Cnt        Score        Error  Units
+TimestreamSpatialTemporalBenchmark.spatialTemporalQuery              01            1h  avgt    3   150626.822 ±  69463.544  us/op
+TimestreamSpatialTemporalBenchmark.spatialTemporalQuery              01            6h  avgt    3   256371.384 ±  45745.381  us/op
+TimestreamSpatialTemporalBenchmark.spatialTemporalQuery              01           24h  avgt    3   672185.886 ± 128803.689  us/op
+TimestreamSpatialTemporalBenchmark.spatialTemporalQuery              01            7d  avgt    3  3709529.632 ± 917002.903  us/op

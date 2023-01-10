@@ -1,0 +1,121 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 1h)
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 6625.127 us/op
+Iteration   1: 4455.080 us/op
+Iteration   2: 4158.876 us/op
+Iteration   3: 3872.293 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery":
+  4162.083 ±(99.9%) 5316.346 us/op [Average]
+  (min, avg, max) = (3872.293, 4162.083, 4455.080), stdev = 291.407
+  CI (99.9%): [≈ 0, 9478.429] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 6h)
+
+# Run progress: 25.00% complete, ETA 00:01:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 11708.804 us/op
+Iteration   1: 8184.044 us/op
+Iteration   2: 7754.263 us/op
+Iteration   3: 7214.088 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery":
+  7717.465 ±(99.9%) 8866.886 us/op [Average]
+  (min, avg, max) = (7214.088, 7717.465, 8184.044), stdev = 486.024
+  CI (99.9%): [≈ 0, 16584.352] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 24h)
+
+# Run progress: 50.00% complete, ETA 00:00:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 19310.518 us/op
+Iteration   1: 15445.667 us/op
+Iteration   2: 14785.378 us/op
+Iteration   3: 14198.800 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery":
+  14809.949 ±(99.9%) 11380.374 us/op [Average]
+  (min, avg, max) = (14198.800, 14809.949, 15445.667), stdev = 623.797
+  CI (99.9%): [3429.575, 26190.322] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 7d)
+
+# Run progress: 75.00% complete, ETA 00:00:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 74830.165 us/op
+Iteration   1: 66986.789 us/op
+Iteration   2: 65582.340 us/op
+Iteration   3: 64566.219 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.DynamodbIdTemporalQueryBenchmark.idTemporalQuery":
+  65711.783 ±(99.9%) 22174.615 us/op [Average]
+  (min, avg, max) = (64566.219, 65711.783, 66986.789), stdev = 1215.465
+  CI (99.9%): [43537.168, 87886.398] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:44
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                         (timeLength)  Mode  Cnt      Score       Error  Units
+DynamodbIdTemporalQueryBenchmark.idTemporalQuery            1h  avgt    3   4162.083 ±  5316.346  us/op
+DynamodbIdTemporalQueryBenchmark.idTemporalQuery            6h  avgt    3   7717.465 ±  8866.886  us/op
+DynamodbIdTemporalQueryBenchmark.idTemporalQuery           24h  avgt    3  14809.949 ± 11380.374  us/op
+DynamodbIdTemporalQueryBenchmark.idTemporalQuery            7d  avgt    3  65711.783 ± 22174.615  us/op

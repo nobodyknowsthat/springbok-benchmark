@@ -1,0 +1,81 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 1 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 001, timeLength = 24h)
+
+# Run progress: 0.00% complete, ETA 00:00:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 4423213.352 us/op
+Iteration   1: 4419742.904 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery":
+  4419742.904 us/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 1 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 01, timeLength = 24h)
+
+# Run progress: 33.33% complete, ETA 02:27:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 4568787.478 us/op
+Iteration   1: 4535244.294 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery":
+  4535244.294 us/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 1 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 1, timeLength = 24h)
+
+# Run progress: 66.67% complete, ETA 01:14:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 4392987.394 us/op
+Iteration   1: 4366581.893 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery":
+  4366581.893 us/op
+
+
+# Run complete. Total time: 03:42:35
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                       (spatialWidth)  (timeLength)  Mode  Cnt        Score   Error  Units
+InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery             001           24h  avgt       4419742.904          us/op
+InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery              01           24h  avgt       4535244.294          us/op
+InfluxdbSpatioTemporalQueryBenchmark.spatialTemporalRangeQuery               1           24h  avgt       4366581.893          us/op

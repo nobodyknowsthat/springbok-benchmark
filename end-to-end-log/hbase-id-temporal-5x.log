@@ -1,0 +1,121 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 1h)
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 5283.448 us/op
+Iteration   1: 1352.774 us/op
+Iteration   2: 1209.042 us/op
+Iteration   3: 1203.990 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery":
+  1255.269 ±(99.9%) 1541.225 us/op [Average]
+  (min, avg, max) = (1203.990, 1255.269, 1352.774), stdev = 84.480
+  CI (99.9%): [≈ 0, 2796.493] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 6h)
+
+# Run progress: 25.00% complete, ETA 00:01:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 3906.386 us/op
+Iteration   1: 2355.627 us/op
+Iteration   2: 2290.662 us/op
+Iteration   3: 2258.018 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery":
+  2301.436 ±(99.9%) 906.504 us/op [Average]
+  (min, avg, max) = (2258.018, 2301.436, 2355.627), stdev = 49.689
+  CI (99.9%): [1394.931, 3207.940] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 24h)
+
+# Run progress: 50.00% complete, ETA 00:00:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 7610.683 us/op
+Iteration   1: 5293.791 us/op
+Iteration   2: 5214.183 us/op
+Iteration   3: 5163.592 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery":
+  5223.855 ±(99.9%) 1197.445 us/op [Average]
+  (min, avg, max) = (5163.592, 5223.855, 5293.791), stdev = 65.636
+  CI (99.9%): [4026.410, 6421.301] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery
+# Parameters: (timeLength = 7d)
+
+# Run progress: 75.00% complete, ETA 00:00:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 37802.656 us/op
+Iteration   1: 30245.896 us/op
+Iteration   2: 30265.306 us/op
+Iteration   3: 30369.849 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.HBaseIdTemporalQueryBenchmark.idTemporalQuery":
+  30293.684 ±(99.9%) 1216.329 us/op [Average]
+  (min, avg, max) = (30245.896, 30293.684, 30369.849), stdev = 66.671
+  CI (99.9%): [29077.355, 31510.012] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:15
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                      (timeLength)  Mode  Cnt      Score      Error  Units
+HBaseIdTemporalQueryBenchmark.idTemporalQuery            1h  avgt    3   1255.269 ± 1541.225  us/op
+HBaseIdTemporalQueryBenchmark.idTemporalQuery            6h  avgt    3   2301.436 ±  906.504  us/op
+HBaseIdTemporalQueryBenchmark.idTemporalQuery           24h  avgt    3   5223.855 ± 1197.445  us/op
+HBaseIdTemporalQueryBenchmark.idTemporalQuery            7d  avgt    3  30293.684 ± 1216.329  us/op

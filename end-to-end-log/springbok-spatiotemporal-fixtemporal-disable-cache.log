@@ -1,0 +1,93 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 001, timeLength = 24h)
+
+# Run progress: 0.00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 43432.928 us/op
+Iteration   1: 41564.155 us/op
+Iteration   2: 41465.354 us/op
+Iteration   3: 41222.049 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery":
+  41417.186 ±(99.9%) 3212.106 us/op [Average]
+  (min, avg, max) = (41222.049, 41417.186, 41564.155), stdev = 176.066
+  CI (99.9%): [38205.080, 44629.291] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 01, timeLength = 24h)
+
+# Run progress: 33.33% complete, ETA 00:02:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 90824.137 us/op
+Iteration   1: 89439.204 us/op
+Iteration   2: 89433.024 us/op
+Iteration   3: 89231.424 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery":
+  89367.884 ±(99.9%) 2156.733 us/op [Average]
+  (min, avg, max) = (89231.424, 89367.884, 89439.204), stdev = 118.218
+  CI (99.9%): [87211.151, 91524.617] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery
+# Parameters: (spatialWidth = 1, timeLength = 24h)
+
+# Run progress: 66.67% complete, ETA 00:02:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 209618.279 us/op
+Iteration   1: 208172.404 us/op
+Iteration   2: 208717.894 us/op
+Iteration   3: 208075.112 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery":
+  208321.803 ±(99.9%) 6320.658 us/op [Average]
+  (min, avg, max) = (208075.112, 208321.803, 208717.894), stdev = 346.457
+  CI (99.9%): [202001.146, 214642.461] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:11:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                    (spatialWidth)  (timeLength)  Mode  Cnt       Score      Error  Units
+SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery             001           24h  avgt    3   41417.186 ± 3212.106  us/op
+SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery              01           24h  avgt    3   89367.884 ± 2156.733  us/op
+SpringbokSpatialTemporalBenchmark.spatialTemporalRangeQuery               1           24h  avgt    3  208321.803 ± 6320.658  us/op

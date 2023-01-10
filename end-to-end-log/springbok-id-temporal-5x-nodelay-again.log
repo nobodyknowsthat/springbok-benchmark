@@ -1,0 +1,121 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery
+# Parameters: (timeLength = 1h)
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 1136.639 us/op
+Iteration   1: 1443.458 us/op
+Iteration   2: 1298.028 us/op
+Iteration   3: 1338.468 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery":
+  1359.985 ±(99.9%) 1369.460 us/op [Average]
+  (min, avg, max) = (1298.028, 1359.985, 1443.458), stdev = 75.065
+  CI (99.9%): [≈ 0, 2729.445] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery
+# Parameters: (timeLength = 6h)
+
+# Run progress: 25.00% complete, ETA 00:01:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 1691.365 us/op
+Iteration   1: 1448.741 us/op
+Iteration   2: 1514.657 us/op
+Iteration   3: 1396.030 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery":
+  1453.143 ±(99.9%) 1084.327 us/op [Average]
+  (min, avg, max) = (1396.030, 1453.143, 1514.657), stdev = 59.436
+  CI (99.9%): [368.816, 2537.470] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery
+# Parameters: (timeLength = 24h)
+
+# Run progress: 50.00% complete, ETA 00:00:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 3511.017 us/op
+Iteration   1: 2888.020 us/op
+Iteration   2: 2850.924 us/op
+Iteration   3: 2735.728 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery":
+  2824.891 ±(99.9%) 1448.791 us/op [Average]
+  (min, avg, max) = (2735.728, 2824.891, 2888.020), stdev = 79.413
+  CI (99.9%): [1376.100, 4273.681] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_342, OpenJDK 64-Bit Server VM, 25.342-b07
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 1 iterations, 5 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery
+# Parameters: (timeLength = 7d)
+
+# Run progress: 75.00% complete, ETA 00:00:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 26296.622 us/op
+Iteration   1: 23469.720 us/op
+Iteration   2: 21599.542 us/op
+Iteration   3: 32371.849 us/op
+
+
+Result "com.anonymous.test.benchmark.benchmark.SpringbokIdTemporalBenchmark.idTemporalQuery":
+  25813.704 ±(99.9%) 105010.570 us/op [Average]
+  (min, avg, max) = (21599.542, 25813.704, 32371.849), stdev = 5755.984
+  CI (99.9%): [≈ 0, 130824.274] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:58
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                     (timeLength)  Mode  Cnt      Score        Error  Units
+SpringbokIdTemporalBenchmark.idTemporalQuery            1h  avgt    3   1359.985 ±   1369.460  us/op
+SpringbokIdTemporalBenchmark.idTemporalQuery            6h  avgt    3   1453.143 ±   1084.327  us/op
+SpringbokIdTemporalBenchmark.idTemporalQuery           24h  avgt    3   2824.891 ±   1448.791  us/op
+SpringbokIdTemporalBenchmark.idTemporalQuery            7d  avgt    3  25813.704 ± 105010.570  us/op
